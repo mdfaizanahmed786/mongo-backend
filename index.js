@@ -13,6 +13,9 @@ mongooseConnect();
 // providing the routes to the paths i.e for auth and notes
 app.use('/api/auth', require('./routes/auth'));
 app.use('/api/notes', require('./routes/notes'));
+app.get('/', (req,res)=>{
+	req.json({success:'success'})
+})
 
 
 // app.get('/', (req,res)=>{
