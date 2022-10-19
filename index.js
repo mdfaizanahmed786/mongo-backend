@@ -23,7 +23,7 @@ app.get('/', (req,res)=>{
 // });
 
 
-app.listen(process.env.PORT || 5000, ()=>{
+app.listen(process.env.PORT || 6000, ()=>{
 	console.log("listening to the server");
 });
 
